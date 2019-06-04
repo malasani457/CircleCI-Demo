@@ -42,7 +42,7 @@ workflows:
                 - Dev1
                 - Dev2
                 - QA
-                - PackageToUAT
+              
       - deploy-UAT:
           filters:
             branches:
