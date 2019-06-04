@@ -16,7 +16,7 @@ jobs:
           command: . build/test.sh
       - store_test_results:
           path: test-results
-  deploy-UAT:
+  packageCreate-Install:
     docker:
     - image: circleci/node:latest
     steps:
@@ -43,7 +43,7 @@ workflows:
                 - Dev2
                 - QA
               
-      - deploy-UAT:
+      - packageCreate-Install:
           filters:
             branches:
               only:
