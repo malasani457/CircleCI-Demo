@@ -42,6 +42,7 @@ workflows:
                 - Dev1
                 - Dev2
                 - QA
+                - PackageToUAT
               
       - packageCreate-Install:
           filters:
