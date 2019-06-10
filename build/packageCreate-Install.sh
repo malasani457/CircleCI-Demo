@@ -3,7 +3,7 @@ Package_Version=""
 TARGET_ORG=
 
 echo "Creating new package version for BrillioTest"
-  Package_Version="$(sfdx force:package:version:create -p BrillioTest -d force-app -k test1234 -w 10 -v DEV --json | jq '.result.SubscriberPackageVersionId' | tr -d '"')"
+  Package_Version="$(sfdx force:package:version:create -p Brillio1 -d force-app -k test1234 -w 10 -v DEV --json | jq '.result.SubscriberPackageVersionId' | tr -d '"')"
   sleep 300 # We've to wait for package replication.
 echo "Package version is Done!"
 echo "******************************"
