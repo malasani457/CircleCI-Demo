@@ -7,4 +7,4 @@ echo "Authenticating..."
 sfdx force:auth:jwt:grant --clientid $SFDC_UAT_CLIENTID --jwtkeyfile keys/server.key --username $SFDC_UAT_USER --setdefaultdevhubusername -a UAT
 
 echo "Autenticating DevHub..."
-sfdx force:auth:jwt:grant --clientid $SFDC_DEV_CLIENTID --jwtkeyfile keys/server.key --username $SFDC_DEV_USER --setdefaultdevhubusername -a DEV
+sfdx force:auth:jwt:grant --clientid $SFDC_DEV1_CLIENTID --jwtkeyfile keys/server.key --username $SFDC_DEV1_USER --setdefaultdevhubusername -a DEV
