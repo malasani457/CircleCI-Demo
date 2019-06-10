@@ -11,6 +11,6 @@ echo  $Package_Version
 echo "******************************"
 
 echo "Package installation process started"
-sfdx force:package:install --package $Package_Version -w 10 -r -u UAT
+sfdx force:package:install --package $Package_Version -w 10 -r -k test1234 -u UAT
 
 echo "Installed Sucessfully...Done!"
